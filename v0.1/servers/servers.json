@@ -1,3 +1,7 @@
 {
-  "servers": "aaa"
+  "servers": [
+  ],
+  "metadata": {
+    "count": 0
+  }
 }
