@@ -1,0 +1,17 @@
+
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "microsoft/msdocs",
+  "description": "Microsoft Learn（Docs）公式 MCP：最新の公式ドキュメントへ安全にアクセス",
+  "version": "Latest",
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  ],
+  "repository": {
+    "url": "https://learn.microsoft.com/",
+    "source": "github"
+  }
+}

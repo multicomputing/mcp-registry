@@ -1,0 +1,19 @@
+
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.microsoftmicrosoft/playwright",
+  "description": "Playwright MCP server (local npm, stdio)",
+  "version": "Latest",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@playwright/mcp",
+      "version": "latest",
+      "transport": { "type": "stdio" }
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/microsoft/playwright-mcp",
+    "source": "github"
+  }
+}
