@@ -1,15 +1,22 @@
-
 {
   "servers": [
     {
-      "server": { "$ref": "../microsoft.playwright/versions/Latest.json" }
+      "server": {
+        "$ref": "./microsoft.playwright/versions/Latest.json"
+      }
     },
     {
-      "server": { "$ref": "../microsoft.msdocs/versions/Latest.json" }
+      "server": {
+        "$ref": "./microsoft.msdocs/versions/Latest.json"
+      }
     },
     {
-      "server": { "$ref": "../atlassian.mcp-server/versions/Latest.json" }
+      "server": {
+        "$ref": "./atlassian.mcp-server/versions/Latest.json"
+      }
     }
   ],
-  "metadata": { "count": 3 }
+  "metadata": {
+    "count": 3
+  }
 }
