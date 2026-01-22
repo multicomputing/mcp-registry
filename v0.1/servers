@@ -34,7 +34,7 @@
     },
     {
       "server": {
-        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
         "name": "com.microsoft/microsoft-learn-mcp",
         "description": "Official Microsoft Learn MCP Server – real-time, trusted docs & code samples for AI and LLMs.",
         "title": "Microsoft Learn MCP",
@@ -43,7 +43,7 @@
           "source": "github"
         },
         "version": "1.0.0",
-        "websiteUrl": "https://learn.microsoft.com/",
+        "websiteUrl": "https://github.com/MicrosoftDocs/mcp",
         "remotes": [
           {
             "type": "streamable-http",
