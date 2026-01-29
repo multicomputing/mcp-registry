@@ -136,38 +136,24 @@
         }
       },
       {
-        "server": {
-          "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-          "name": "local/developer-mcp-template",
-          "description": "Developer template entry for running your own local MCP server (STDIO or localhost HTTP). Edit the command/args or URL to match your project.",
-          "title": "Local MCP Dev (Template)",
-          "version": "0.0.0"
-        },
-        "_meta": {
-          "io.modelcontextprotocol.registry/publisher-provided": {
-            "note": "This is a template. It will fail unless you run a local MCP server that matches the chosen transport (STDIO or HTTP) and endpoint.",
-            "examples": [
-              {
-                "name": "STDIO (Node.js example)",
-                "description": "Use STDIO for local development; point to your built entrypoint.",
-                "config": "{\n  \"mcpServers\": {\n    \"my-local-mcp\": {\n      \"command\": \"node\",\n      \"args\": [\n        \"${workspaceFolder}/dist/index.js\"\n      ]\n    }\n  }\n}"
-              },
-              {
-                "name": "STDIO (Python example)",
-                "description": "Point to your module/entry script.",
-                "config": "{\n  \"mcpServers\": {\n    \"my-local-mcp\": {\n      \"command\": \"python\",\n      \"args\": [\n        \"-m\",\n        \"my_mcp_server\"\n      ]\n    }\n  }\n}"
-              },
-              {
-                "name": "Local port (HTTP)",
-                "description": "If your server runs as HTTP, connect by URL.",
-                "config": "{\n  \"mcpServers\": {\n    \"my-local-mcp\": {\n      \"type\": \"http\",\n      \"url\": \"http://127.0.0.1:3000/mcp\"\n    }\n  }\n}"
-              }
-            ]
+        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+        "name": "local/my-dev-mcp",
+        "title": "My Dev MCP (HTTP/SSE)",
+        "version": "0.0.0",
+        "description": "Local development MCP server available at http://127.0.0.1:3100/mcp and SSE at http://127.0.0.1:3100/sse. Developer should manually start the server.",
+        "remotes": [
+          {
+            "type": "streamable-http",
+            "url": "http://127.0.0.1:3100/mcp"
+          },
+          {
+            "type": "sse",
+            "url": "http://127.0.0.1:3100/sse"
           }
-        }
+        ]
       }
     ],
     "metadata": {
-      "count": 7
+      "count": 6
     }
   }
