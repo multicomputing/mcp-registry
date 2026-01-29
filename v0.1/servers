@@ -110,7 +110,7 @@
           ]
         },
         "_meta": {
-          "dummy": {
+          "io.modelcontextprotocol.registry/publisher-provided": {
             "status": "active",
             "publishedAt": "2026-01-30T00:00:00.000000Z",
             "updatedAt": "2026-01-30T00:00:00.000000Z",
@@ -143,7 +143,7 @@
           ]
         },
         "_meta": {
-          "dummy": {
+          "io.modelcontextprotocol.registry/publisher-provided": {
             "status": "active",
             "publishedAt": "2026-01-30T00:00:00.000000Z",
             "updatedAt": "2026-01-30T00:00:00.000000Z",
@@ -170,7 +170,7 @@
           ]
         },
         "_meta": {
-          "dummy": {
+          "io.modelcontextprotocol.registry/publisher-provided": {
             "status": "active",
             "publishedAt": "2026-01-30T00:00:00.000000Z",
             "updatedAt": "2026-01-30T00:00:00.000000Z",
