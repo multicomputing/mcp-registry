@@ -108,6 +108,14 @@
               }
             }
           ]
+        },
+        "_meta": {
+          "dummy": {
+            "status": "active",
+            "publishedAt": "2026-01-30T00:00:00.000000Z",
+            "updatedAt": "2026-01-30T00:00:00.000000Z",
+            "isLatest": true
+          }
         }
       },
       {
@@ -133,24 +141,42 @@
               }
             }
           ]
+        },
+        "_meta": {
+          "dummy": {
+            "status": "active",
+            "publishedAt": "2026-01-30T00:00:00.000000Z",
+            "updatedAt": "2026-01-30T00:00:00.000000Z",
+            "isLatest": true
+          }
         }
       },
       {
-        "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-        "name": "local/my-dev-mcp",
-        "title": "My Dev MCP (HTTP/SSE)",
-        "version": "0.0.0",
-        "description": "Local development MCP server available at http://127.0.0.1:3100/mcp and SSE at http://127.0.0.1:3100/sse. Developer should manually start the server.",
-        "remotes": [
-          {
-            "type": "streamable-http",
-            "url": "http://127.0.0.1:3100/mcp"
-          },
-          {
-            "type": "sse",
-            "url": "http://127.0.0.1:3100/sse"
+        "server": {
+          "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+          "name": "local/my-dev-mcp",
+          "title": "My Dev MCP (HTTP/SSE)",
+          "version": "0.0.0",
+          "description": "Local development MCP server available at http://127.0.0.1:3100/mcp and SSE at http://127.0.0.1:3100/sse. Developer should manually start the server.",
+          "remotes": [
+            {
+              "type": "streamable-http",
+              "url": "http://127.0.0.1:3100/mcp"
+            },
+            {
+              "type": "sse",
+              "url": "http://127.0.0.1:3100/sse"
+            }
+          ]
+        },
+        "_meta": {
+          "dummy": {
+            "status": "active",
+            "publishedAt": "2026-01-30T00:00:00.000000Z",
+            "updatedAt": "2026-01-30T00:00:00.000000Z",
+            "isLatest": true
           }
-        ]
+        }
       }
     ],
     "metadata": {
