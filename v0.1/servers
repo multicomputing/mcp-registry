@@ -88,75 +88,40 @@
       {
         "server": {
           "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-          "name": "com.microsoft/playwright",
-          "description": "A Model Context Protocol (MCP) server that provides browser automation capabilities using Playwright. This server enables LLMs to interact with web pages through structured accessibility snapshots.",
-          "title": "Playwright MCP Server",
+          "name": "com.microsoft/playwright-mcp",
+          "title": "Playwright MCP",
+          "description": "Browser automation MCP server powered by Playwright.",
           "repository": {
             "url": "https://github.com/microsoft/playwright-mcp",
             "source": "github"
           },
-          "version": "0.0.56",
-          "websiteUrl": "https://playwright.dev/",
+          "version": "0.0.61",
           "packages": [
             {
-              "registryType": "npx",
-              "identifier": "@playwright/mcp@latest",
-              "version": "latest",
+              "registryType": "npm",
+              "registryBaseUrl": "https://registry.npmjs.org",
+              "identifier": "@playwright/mcp",
+              "version": "0.0.61",
+              "runtimeHint": "npx",
               "transport": {
                 "type": "stdio"
               }
             }
           ]
-        },
-        "_meta": {
-          "io.modelcontextprotocol.registry/official": {
-            "status": "active",
-            "publishedAt": "2026-01-17T00:00:00.000000Z",
-            "updatedAt": "2026-01-17T00:00:00.000000Z",
-            "isLatest": true
-          }
         }
       },
       {
         "server": {
           "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-          "name": "com.microsoft/nuget",
-          "description": "A Model Context Protocol (MCP) server for NuGet.",
-          "version": "1.1.29",
-          "packages": [
-            {
-              "registryType": "nuget",
-              "registryBaseUrl": "https://api.nuget.org/v3/index.json",
-              "identifier": "NuGet.Mcp.Server",
-              "version": "1.1.29",
-              "transport": {
-                "type": "stdio"
-              }
-            }
-          ]
-        },
-        "_meta": {
-          "io.modelcontextprotocol.registry/official": {
-            "status": "active",
-            "publishedAt": "2026-01-23T22:34:10.229563Z",
-            "updatedAt": "2026-01-23T22:34:10.229563Z",
-            "isLatest": true
-          }
-        }
-      },
-      {
-        "server": {
-          "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-          "name": "com.microsoft/markitdown",
-          "description": "MarkItDown MCP server: convert documents (PDF, Office, images, HTML, etc.) to Markdown for LLM workflows.",
-          "title": "MarkItDown MCP Server",
+          "name": "com.microsoft/markitdown-mcp",
+          "title": "MarkItDown MCP",
+          "description": "Convert documents (file/http/https/data URIs) to Markdown via MarkItDown.",
           "repository": {
             "url": "https://github.com/microsoft/markitdown",
             "source": "github",
             "subfolder": "packages/markitdown-mcp"
           },
           "version": "0.0.1a4",
-          "websiteUrl": "https://github.com/microsoft/markitdown",
           "packages": [
             {
               "registryType": "pypi",
@@ -168,26 +133,6 @@
               }
             }
           ]
-        },
-        "_meta": {
-          "io.modelcontextprotocol.registry/official": {
-            "status": "active",
-            "publishedAt": "2026-01-19T00:00:00.000000Z",
-            "updatedAt": "2026-01-19T00:00:00.000000Z",
-            "isLatest": true
-          },
-          "io.modelcontextprotocol.registry/publisher-provided": {
-            "documentation": "https://pypi.org/project/markitdown-mcp/",
-            "keywords": [
-              "markdown",
-              "documents",
-              "conversion",
-              "pypi",
-              "python",
-              "stdio",
-              "http"
-            ]
-          }
         }
       },
       {
