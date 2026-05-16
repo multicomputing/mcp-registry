@@ -151,7 +151,7 @@
       {
         "server": {
           "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-          "name": "colbymchenry/codegraph",
+          "name": "io.github.colbymchenry/codegraph",
           "title": "CodeGraph MCP",
           "description": "Pre-indexed code knowledge graph for Claude Code — fewer tokens, fewer tool calls, 100% local",
           "repository": {
@@ -163,7 +163,7 @@
             {
               "registryType": "npm",
               "registryBaseUrl": "https://registry.npmjs.org",
-              "identifier": "codegraph",
+              "identifier": "@colbymchenry/codegraph",
               "version": "0.7.6",
               "runtimeHint": "npx",
               "transport": {
@@ -171,6 +171,14 @@
               }
             }
           ]
+        },
+        "_meta": {
+          "io.modelcontextprotocol.registry/publisher-provided": {
+            "status": "active",
+            "publishedAt": "2026-01-30T00:00:00.000000Z",
+            "updatedAt": "2026-01-30T00:00:00.000000Z",
+            "isLatest": true
+          }
         }
       }
     ],
