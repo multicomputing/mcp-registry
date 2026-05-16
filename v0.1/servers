@@ -167,20 +167,11 @@
               "version": "0.7.6",
               "runtimeHint": "npx",
               "runtimeArguments": [
-                {
-                  "type": "named",
-                  "name": "-y"
-                }
+                "-y"
               ],
               "packageArguments": [
-                {
-                  "type": "positional",
-                  "value": "serve"
-                },
-                {
-                  "type": "named",
-                  "name": "--mcp"
-                }
+                "serve",
+                "--mcp"
               ],
               "transport": {
                 "type": "stdio"
